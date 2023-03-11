@@ -5,7 +5,7 @@ import FooterContent from '../components/Footer';
 
 function Main() {
     return (
-        <div className="bg-blue grid grid-rows-6 container h-4/5 rounded-lg w-3/4">
+        <div className="bg-blue grid grid-rows-6 container h-4/5 rounded-lg w-3/4 lg:w-1/3">
             <div className="row-span-1">
                 <HeaderContent />
             </div>
@@ -14,7 +14,7 @@ function Main() {
                 <Outlet />
             </div>
 
-            <div className="row-span-1">
+            <div className="flex items-center justify-center row-span-1">
                 <FooterContent />
             </div>
         </div>
