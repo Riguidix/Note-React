@@ -25,7 +25,7 @@ function Card(props) {
                             id="checkbox"
                             className="
                                 appearance-none border-orange border-2 flex h-5 items-center justify-center rounded-md w-5
-                                checked:before:content-['\2713'] checked:bg-orange checked:text-white
+                                checked:before:content-['\u2713'] checked:bg-orange checked:text-white
                             "
                             checked={isChecked}
                             onChange={ handleCheckboxChange }
