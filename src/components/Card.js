@@ -27,13 +27,14 @@ function Card(props) {
     }
  
     return (
-        <div className="bg-gray-dark h-1/6 my-2 rounded w-full">
+        <div className="bg-gray-dark select-none h-1/6 my-2 rounded w-full">
             <div className="grid grid-cols-6 group h-full w-full">
                 <div className="col-span-5 flex items-center group-hover:col-span-4">
                     <div className="flex items-center justify-around w-full">
                         <input
                             type="checkbox"
                             id="checkbox"
+                            // eslint-disable-next-line
                             className="
                                 appearance-none border-orange border-2 flex h-5 items-center justify-center rounded-md w-5
                                 checked:before:content-['\2713'] checked:bg-orange checked:text-white
