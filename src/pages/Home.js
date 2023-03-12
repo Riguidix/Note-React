@@ -23,6 +23,9 @@ function Home(props) {
             case 'important':
                 setTasks(tasksState.filter(task => task.important));
                 break;
+            default:
+                setTasks(tasksState);
+                break;
         }
     }, [props.page, tasksState]);
 

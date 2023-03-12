@@ -10,19 +10,19 @@ export const taskSlice = createSlice({
             state.push(action.payload);
         },
         editComplete: (state, action) => {
-            const task = state.find(task => task.id == action.payload);
+            const task = state.find(task => task.id === action.payload);
             if (task) {            
                 state[state.indexOf(task)].completed = !task.completed;
             }
         },
         editImportant: (state, action) => {
-            const task = state.find(task => task.id == action.payload);
+            const task = state.find(task => task.id === action.payload);
             if (task) {            
                 state[state.indexOf(task)].important = !task.important;
             }
         },
         deleteTask: (state, action) => {
-            const task = state.find(task => task.id == action.payload);
+            const task = state.find(task => task.id === action.payload);
             if (task) {
                 state.splice(state.indexOf(task), 1)
             }
